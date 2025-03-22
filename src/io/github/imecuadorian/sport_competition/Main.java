@@ -38,7 +38,7 @@ public class Main {
 
     private static void evaluateAthletes() {
         for (Athlete athlete : ATHLETES) {
-            int score = athlete.getScore();
+            int score = athlete.score();
             if (score >= EXCELLENT.getMinScore() && score <= EXCELLENT.getMaxScore()) {
                 excellentAthletes++;
             } else if (score >= GOOD.getMinScore() && score <= GOOD.getMaxScore()) {
